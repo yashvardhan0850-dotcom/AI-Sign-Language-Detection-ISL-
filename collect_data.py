@@ -29,7 +29,7 @@ def extract_keypoints(results):
             if handedness.classification[0].label == 'Left': lh = hand_math
             else: rh = hand_math
     return np.concatenate([lh, rh])
-
+#(1) for extrenal webcam ex. iriun, (0) for laptop webcam
 cap = cv2.VideoCapture(1)
 
 print("\nTurning on camera")
